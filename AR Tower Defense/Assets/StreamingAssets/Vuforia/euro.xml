@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="stones_4-wallpaper-2560x1600" size="5.000000 3.125000" />
+    <ImageTarget name="tree-dawn-nature-bucovina-56875" size="5.000000 3.125000" />
+    <ImageTarget name="10-euro-2014-u-france_74_71535458f96117e9eL" size="5.000000 2.720000" />
+    <ImageTarget name="5euroschein" size="5.000000 2.599278" />
+  </Tracking>
+</QCARConfig>
