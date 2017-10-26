@@ -18,7 +18,10 @@ namespace TDTK {
 		public bool loop=false;
 		public int loopPoint=0;		
 		
-		
+		private GameObject lineObj;
+		private LineRenderer lineRen;
+		private Transform parentT;
+
 		public void Init(){
 			
 			if(loop){
@@ -52,46 +55,30 @@ namespace TDTK {
 		}
 
 		void Start(){
-			if (createPathLine) {
-				InvokeRepeating("CreatePathLine", 0, 1.0f);
-			}
-		}
-		void CreatePathLine(){
-			
-			Transform parentT=new GameObject().transform;
+			parentT=new GameObject().transform;
 			parentT.position=transform.position;
 			parentT.parent=transform;
 			parentT.gameObject.name="PathLine";
-			
+
 			GameObject pathLine=(GameObject)Resources.Load("ScenePrefab/PathLine");
 			GameObject pathPoint=(GameObject)Resources.Load("ScenePrefab/PathPoint");
-			
-			Vector3 startPoint=Vector3.zero;
-			Vector3 endPoint=Vector3.zero;
-			
-			for(int i=0; i<wpList.Count; i++){
-				GameObject point=(GameObject)Instantiate(pathPoint, wpList[i].position, Quaternion.identity);
-				point.transform.parent=parentT;
-				
-				endPoint=wpList[i].position;
-				
-				if(i>0){
-					GameObject lineObj=(GameObject)Instantiate(pathLine, startPoint, Quaternion.identity);
-					LineRenderer lineRen=lineObj.GetComponent<LineRenderer>();
-					lineRen.SetPosition(0, startPoint);
-					lineRen.SetPosition(1, endPoint);
-					
-					lineObj.transform.parent=parentT;
-				}
-				
-				startPoint=wpList[i].position;
+			lineObj=(GameObject)Instantiate(pathLine, wpList[0].position, Quaternion.identity);
+			lineRen=lineObj.GetComponent<LineRenderer>();
+
+			if (createPathLine) {
+				InvokeRepeating("CreatePathLine", 0, 0.5f);
 			}
 		}
-		
-		
-		
-		
-		
+
+		void CreatePathLine(){
+			if (wpList.Count >= 2) {
+				for(int i=0; i<wpList.Count; i++){
+					lineRen.SetPosition(i, wpList[i].position);
+				}
+				lineObj.transform.parent=parentT;
+			}
+		}
+
 		public bool showGizmo=true;
 		public Color gizmoColor=Color.blue;
 		void OnDrawGizmos(){
