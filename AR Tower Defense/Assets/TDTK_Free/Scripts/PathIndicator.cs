@@ -35,6 +35,7 @@ namespace TDTK {
 		IEnumerator EmitRoutine(){
 			while(true){
 				yield return new WaitForSeconds(updateRate);
+				indicatorT=pSystem.transform;
 				pSystem.startRotation=(indicatorT.rotation.eulerAngles.y)*Mathf.Deg2Rad;
 				pSystem.Emit(1);
 			}
@@ -49,6 +50,7 @@ namespace TDTK {
 			StartCoroutine(EmitRoutine());
 			
 			while(true){
+				waypointList=path.GetWaypointList();
 				//move to next point, return true if reach
 				if(MoveToPoint(indicatorT, waypointList[waypointID])){
 					waypointID+=1;

@@ -50,13 +50,11 @@ namespace TDTK {
 			
 			return totalDistance;
 		}
-		
-		
-		
-		
-		
+
 		void Start(){
-			if(createPathLine) CreatePathLine();
+			if (createPathLine) {
+				InvokeRepeating("CreatePathLine", 0, 1.0f);
+			}
 		}
 		void CreatePathLine(){
 			
