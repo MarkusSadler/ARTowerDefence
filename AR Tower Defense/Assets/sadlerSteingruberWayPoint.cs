@@ -20,6 +20,10 @@ public class sadlerSteingruberWayPoint : MonoBehaviour {
 			return;
 		}
 
-		wayPoint.transform.position = new Vector3 (imageTarget.transform.position.x, 0, imageTarget.transform.position.z);
+		// Camera is 50 units away from platforms
+		float yCorrection = (50 - imageTarget.transform.position.y) / 50;
+		float x = yCorrection != 0 ? imageTarget.transform.position.x / yCorrection : imageTarget.transform.position.x;
+		float z = yCorrection != 0 ? imageTarget.transform.position.z / yCorrection : imageTarget.transform.position.z;
+		wayPoint.transform.position = new Vector3 (x, 0, z);
 	}
 }
