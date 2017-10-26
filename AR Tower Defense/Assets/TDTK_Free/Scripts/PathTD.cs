@@ -64,9 +64,11 @@ namespace TDTK {
 			GameObject pathPoint=(GameObject)Resources.Load("ScenePrefab/PathPoint");
 			lineObj=(GameObject)Instantiate(pathLine, wpList[0].position, Quaternion.identity);
 			lineRen=lineObj.GetComponent<LineRenderer>();
+		}
 
+		void Update() {
 			if (createPathLine) {
-				InvokeRepeating("CreatePathLine", 0, 0.5f);
+				CreatePathLine ();
 			}
 		}
 
