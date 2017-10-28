@@ -53,19 +53,19 @@ namespace TDTK{
 			EditorGUILayout.BeginHorizontal();
 			cont=new GUIContent("EnableTouchPan:", "Check to enable finger drag on screen to pan the camera");
 			EditorGUILayout.LabelField(cont, GUILayout.Width(width));
-			instance.enableTouchPan=EditorGUILayout.Toggle(instance.enableTouchPan);
+			//instance.enableTouchPan=EditorGUILayout.Toggle(instance.enableTouchPan);
 			EditorGUILayout.EndHorizontal();
 			
 			EditorGUILayout.BeginHorizontal();
 			cont=new GUIContent("EnableTouchRotate:", "Check to enable two fingers drag on screen to rotate the camera angle");
 			EditorGUILayout.LabelField(cont, GUILayout.Width(width));
-			instance.enableTouchRotate=EditorGUILayout.Toggle(instance.enableTouchRotate);
+			//instance.enableTouchRotate=EditorGUILayout.Toggle(instance.enableTouchRotate);
 			EditorGUILayout.EndHorizontal();
 			
 			EditorGUILayout.BeginHorizontal();
 			cont=new GUIContent("enableTouchZoom:", "Check to enable two fingers pinching on screen to rotate the camera angle");
 			EditorGUILayout.LabelField(cont, GUILayout.Width(width));
-			instance.enableTouchZoom=EditorGUILayout.Toggle(instance.enableTouchZoom);
+			//instance.enableTouchZoom=EditorGUILayout.Toggle(instance.enableTouchZoom);
 			EditorGUILayout.EndHorizontal();
 			
 			EditorGUILayout.BeginHorizontal();
