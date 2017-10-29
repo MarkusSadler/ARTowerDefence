@@ -9639,7 +9639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54316438780d9f542b83c2cd50e6b024, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildMode: 0
+  buildMode: 1
   fastForwardTimeScale: 4
   disableTextOverlay: 0
   pauseGameInPerkMenu: 1
@@ -12165,11 +12165,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1477810735}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2e1bd236539541bba561a81551cbb38, type: 3}
+  m_Script: {fileID: 11500000, guid: 3aefab41e564b4cbdb45846d33ee17e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   imageTarget: {fileID: 1477810741}
-  wayPoint: {fileID: 1624578354}
+  platform: {fileID: 1624578354}
 --- !u!114 &1477810741 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400000, guid: 384a0d8cc71cef74a873b3353337ea2c,

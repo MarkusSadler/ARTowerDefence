@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Vuforia;
+using TDTK;
 
 public class sadlerSteingruberWayPoint : MonoBehaviour {
 
