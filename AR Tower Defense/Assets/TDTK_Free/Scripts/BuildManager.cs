@@ -30,13 +30,9 @@ namespace TDTK {
 		
 		
 		public bool autoSearchForPlatform=false;
-		
-		
-		
-		
-		
-		
-		private static BuildManager instance;
+
+
+		public static BuildManager instance;
 		private static BuildInfo buildInfo;
 		private int towerCount=0;
 		public static int GetTowerCount(){ return instance.towerCount; }
