@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TDTK;
-using UnityEditor;
+//using UnityEditor;
 using UnityEngine;
 using Vuforia;
 

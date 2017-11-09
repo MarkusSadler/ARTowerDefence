@@ -544,7 +544,7 @@ MonoBehaviour:
     cooldown: 1
     clipSize: 5
     reloadDuration: 1
-    range: 5
+    range: 500
     aoeRadius: 0
     crit:
       chance: 0.2

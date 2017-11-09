@@ -6,7 +6,7 @@ PlayerSettings:
   serializedVersion: 12
   productGUID: 6439f7450426e1741807a1f38a52bf02
   AndroidProfiler: 0
-  defaultScreenOrientation: 4
+  defaultScreenOrientation: 2
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
@@ -141,7 +141,7 @@ PlayerSettings:
   targetPixelDensity: 0
   resolutionScalingMode: 0
   applicationIdentifier:
-    Android: com.Company.ProductName
+    Android: com.steingruber.td
     Standalone: unity.DefaultCompany.TDTK_v3.0_Free
     Tizen: com.Company.ProductName
     iOS: com.rise.towerdefense
