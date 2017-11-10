@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="cave-start" size="1.000000 0.704687" />
     <ImageTarget name="castle-finish" size="1.000000 1.075000" />
     <ImageTarget name="start_point" size="1.000000 1.037344" />
     <ImageTarget name="Tower-1" size="0.500000 0.759174" />
