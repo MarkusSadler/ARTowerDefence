@@ -7809,7 +7809,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: mWorldCenterMode
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11425,6 +11425,53 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1325633220}
+--- !u!1001 &1334617379
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4656366852070300, guid: 4be87694025b30a4488bb01e71214d66, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 13.27551
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656366852070300, guid: 4be87694025b30a4488bb01e71214d66, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 13.014337
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656366852070300, guid: 4be87694025b30a4488bb01e71214d66, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 11.548767
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656366852070300, guid: 4be87694025b30a4488bb01e71214d66, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656366852070300, guid: 4be87694025b30a4488bb01e71214d66, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656366852070300, guid: 4be87694025b30a4488bb01e71214d66, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656366852070300, guid: 4be87694025b30a4488bb01e71214d66, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4656366852070300, guid: 4be87694025b30a4488bb01e71214d66, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114218624438969686, guid: 4be87694025b30a4488bb01e71214d66,
+        type: 2}
+      propertyPath: clipMove
+      value: 
+      objectReference: {fileID: 7400000, guid: 161131f5c23ab8c49918db4b67e108e7, type: 3}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4be87694025b30a4488bb01e71214d66, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1339104490
 GameObject:
   m_ObjectHideFlags: 0
@@ -12307,7 +12354,7 @@ MonoBehaviour:
   waveList:
   - waveID: 0
     subWaveList:
-    - unit: {fileID: 1612528191962514, guid: 4be87694025b30a4488bb01e71214d66, type: 2}
+    - unit: {fileID: 1241980217054582, guid: 4be87694025b30a4488bb01e71214d66, type: 2}
       count: 3
       interval: 3
       delay: 0
@@ -12356,33 +12403,6 @@ MonoBehaviour:
       minValue: 1
       maxValue: 500
     unitSettingList:
-    - unit: {fileID: 1612528191962514, guid: 4be87694025b30a4488bb01e71214d66, type: 2}
-      enabled: 1
-      minWave: 0
-      HP:
-        startValue: 1
-        incMultiplier: 1
-        devMultiplier: 0.2
-        minValue: 1
-        maxValue: 50
-      shield:
-        startValue: 0
-        incMultiplier: 1
-        devMultiplier: 0.2
-        minValue: 1
-        maxValue: 25
-      speed:
-        startValue: 1
-        incMultiplier: 1
-        devMultiplier: 0.2
-        minValue: 1
-        maxValue: 6
-      interval:
-        startValue: 1
-        incMultiplier: 1
-        devMultiplier: 0.2
-        minValue: 1
-        maxValue: 6
     - unit: {fileID: 100006, guid: 1d12b457717330e4191cc7d547a3d3ad, type: 2}
       enabled: 1
       minWave: 0
@@ -13256,8 +13276,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1624578354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.5}
-  m_LocalScale: {x: 10, y: 1, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 10, y: 2, z: 5}
   m_Children: []
   m_Father: {fileID: 589333800}
   m_RootOrder: 0
