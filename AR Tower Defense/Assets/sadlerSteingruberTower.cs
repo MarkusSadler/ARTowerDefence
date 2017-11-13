@@ -50,7 +50,6 @@ public class sadlerSteingruberTower : MonoBehaviour
                 Vector3 diff = pos - oldPlatformTransform.position;
 
                 g.transform.position = newPlatformPosition + diff;
-                break;
             }
         }
 
