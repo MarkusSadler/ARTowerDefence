@@ -9,10 +9,13 @@ public class sadlerSteingruberWayPoint : MonoBehaviour {
 	public TrackableBehaviour imageTarget;
 
 	public GameObject wayPoint;
+	
+	public float cameraDistance = 30;
 
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+	{
+		//cameraDistance = Camera.main.transform.position.y;
 	}
 	
 	// Update is called once per frame
@@ -22,7 +25,7 @@ public class sadlerSteingruberWayPoint : MonoBehaviour {
 		}
 
 		// Camera is 50 units away from platforms
-		float yCorrection = (50 - imageTarget.transform.position.y) / 50;
+		float yCorrection = (cameraDistance - imageTarget.transform.position.y) / cameraDistance;
 		float x = yCorrection != 0 ? imageTarget.transform.position.x / yCorrection : imageTarget.transform.position.x;
 		float z = yCorrection != 0 ? imageTarget.transform.position.z / yCorrection : imageTarget.transform.position.z;
 		wayPoint.transform.position = new Vector3 (x, 0, z);

@@ -7765,7 +7765,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 50
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7809,7 +7809,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: mWorldCenterMode
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11072,6 +11072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageTarget: {fileID: 1290163027}
   wayPoint: {fileID: 1547955881}
+  cameraDistance: 30
 --- !u!21 &1303572522
 Material:
   serializedVersion: 6
@@ -11714,6 +11715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageTarget: {fileID: 1368996399}
   wayPoint: {fileID: 92213919}
+  cameraDistance: 30
 --- !u!1 &1371175858
 GameObject:
   m_ObjectHideFlags: 0
@@ -12174,6 +12176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageTarget: {fileID: 1477810741}
   platform: {fileID: 1624578354}
+  cameraDistance: 50
 --- !u!114 &1477810741 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400000, guid: 384a0d8cc71cef74a873b3353337ea2c,
@@ -13230,7 +13233,7 @@ Transform:
   m_GameObject: {fileID: 1624578354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 2, z: 5}
+  m_LocalScale: {x: 10, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 589333800}
   m_RootOrder: 0

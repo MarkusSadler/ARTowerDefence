@@ -11,10 +11,13 @@ public class sadlerSteingruberTower : MonoBehaviour
     public TrackableBehaviour imageTarget;
 
     public GameObject platform;
+    
+    public float cameraDistance = 30;
 
     // Use this for initialization
     void Start()
     {
+        //cameraDistance = Camera.main.transform.position.y;
     }
 
     // Update is called once per frame
@@ -28,7 +31,7 @@ public class sadlerSteingruberTower : MonoBehaviour
         Transform oldPlatformTransform = platform.transform;
 
         // Camera is 50 units away from platforms
-        float yCorrection = (50 - imageTarget.transform.position.y) / 50;
+        float yCorrection = (cameraDistance - imageTarget.transform.position.y) / cameraDistance;
         float x = Math.Abs(yCorrection) > 0.01
             ? imageTarget.transform.position.x / yCorrection
             : imageTarget.transform.position.x;
