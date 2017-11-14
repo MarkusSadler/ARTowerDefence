@@ -10,7 +10,7 @@ public class sadlerSteingruberWayPoint : MonoBehaviour {
 
 	public GameObject wayPoint;
 	
-	public float cameraDistance = 30;
+	public float cameraDistance = 20;
 
 	// Use this for initialization
 	void Start ()
